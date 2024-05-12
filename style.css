@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: min(100%, 500px);
+  height: 100%;
+  text-align: center;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  /* border-radius: 20px; */
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.calculator {
+  margin: 10px auto;
+  width: 100%;
+  height: 100%;
+}
+.display {
+  padding: 10px;
+}
+
+.outline {
+  border: 0.2px solid black;
+  margin-bottom: 20px;
+}
+input {
+  width: calc(100% - 10px);
+  height: 20vh;
+  outline: none;
+  border: none;
+  font-size: 35px;
+  text-align: right;
+  padding-top: 20px;
+  background-color: transparent;
+}
+
+.row {
+  padding: 8px 0;
+}
+
+.operator,
+.number {
+  width: 85px;
+  height: 85px;
+  padding: 20px 20px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 50%;
+  font-size: 28px;
+  line-height: 30px;
+  border: none;
+  font-weight: 400;
+  margin: 2px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#zero {
+  width: 180px;
+  border-radius: 50px;
+}
+
+.orange {
+  background-color: orange;
+  color: white;
+}
